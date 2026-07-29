@@ -1,6 +1,13 @@
 # Code Explainer
 
-一个vscode插件。选中代码，一键获取逐行中文解释。鼠标悬停查看，不用再反复问 AI。
+> VS Code 插件 — 选中代码一键获取逐行中文解释，鼠标悬停查看，适合编程小白阅读学习源码。
+>
+> VS Code extension — Explain code line by line in Chinese. Hover to see what each line does. Perfect for beginners learning to read source code.
+
+**关键词 / Keywords**
+
+`代码解释` `编程学习` `阅读源码` `逐行解释` `AI 解释代码`
+`code-explainer` `vscode-extension` `code-learning` `deepseek` `ai-code-explanation`
 
 ## 为什么会有这个工具？
 
