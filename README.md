@@ -14,6 +14,13 @@ Code Explainer 的做法：一次性解释整个文件，每一行的解释**直
 
 ## 安装
 
+**下载**（二选一）：
+
+- **GitHub Release**：https://github.com/PipiTang233/code-explainer/releases/tag/v0.1.0
+- **直链下载**：https://github.com/PipiTang233/code-explainer/releases/download/v0.1.0/code-explainer-0.1.0.vsix
+
+**安装**：
+
 1. 下载 `.vsix` 文件
 2. VS Code → 扩展 → `...` → 从 VSIX 安装
 3. 打开任意代码文件 → 点右上角 **"解释当前代码"**
@@ -30,8 +37,6 @@ Code Explainer 的做法：一次性解释整个文件，每一行的解释**直
 
 API Key 保存在 VS Code 全局设置中，代码里不硬编码，开源安全。
 
-## 补充
-想针对每个词做个追问，能开几个窗口，暂时不知道为什么许愿失败了，后面再看看。（有没有佬比较有空直接帮我整了（心虚））
 ## License
 
 MIT
