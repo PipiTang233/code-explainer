@@ -1,14 +1,24 @@
 {
   "name": "code-explainer",
   "displayName": "Code Explainer",
-  "description": "一键解释代码，鼠标悬停查看每行代码的作用",
+  "description": "一键解释代码，鼠标悬停查看每行代码的作用。适合编程小白学习阅读源码",
   "version": "0.1.0",
   "publisher": "code-explainer",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
+    "Education",
     "Other"
+  ],
+  "keywords": [
+    "代码解释",
+    "code explainer",
+    "编程学习",
+    "阅读源码",
+    "逐行解释",
+    "AI 解释代码",
+    "DeepSeek"
   ],
   "activationEvents": [
     "onLanguage"
