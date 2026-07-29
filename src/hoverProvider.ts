@@ -15,13 +15,12 @@ export class CodeHoverProvider implements vscode.HoverProvider {
     document: vscode.TextDocument,
     position: vscode.Position,
   ): vscode.Hover | null {
-    // 开关关闭时不做任何事
     if (!this.statusBar.enabled) {
       return null;
     }
 
     const filePath = document.uri.toString();
-    const line = position.line + 1; // API 返回的行号从 1 开始
+    const line = position.line + 1;
 
     const explanation = this.cache.get(filePath, line);
     if (!explanation || explanation === '') {
