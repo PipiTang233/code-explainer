@@ -1,0 +1,78 @@
+{
+  "name": "code-explainer",
+  "displayName": "Code Explainer",
+  "description": "一键解释代码，鼠标悬停查看每行代码的作用",
+  "version": "0.1.0",
+  "publisher": "code-explainer",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeExplainer.explain",
+        "title": "解释当前代码"
+      },
+      {
+        "command": "codeExplainer.toggle",
+        "title": "切换代码解释开关"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "codeExplainer.explain",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "codeExplainer.explain",
+          "group": "1_modification"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "codeExplainer.explain",
+        "key": "ctrl+shift+e",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Code Explainer",
+      "properties": {
+        "codeExplainer.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "DeepSeek API Key"
+        },
+        "codeExplainer.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "插件总开关"
+        },
+        "codeExplainer.model": {
+          "type": "string",
+          "default": "deepseek-chat",
+          "description": "使用的 DeepSeek 模型名称"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+# 编译输出
+out/
+
+# Node.js
+node_modules/
+
+# VS Code 本地设置（工作区配置可能含敏感信息）
+.vscode/settings.json
+
+# 打包文件
+*.vsix
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# IDE 临时文件
+*.swp
+*.swo
+*~
