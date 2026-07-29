@@ -20,6 +20,13 @@
 - [x] 状态栏开关正常
 - [x] 打包为 .vsix（24 KB）
 - [x] 推送到 GitHub
+- [x] 发布 GitHub Release v0.1.0（含 .vsix 下载）
+
+## 📦 Release
+
+v0.1.0 已发布：https://github.com/PipiTang233/code-explainer/releases/tag/v0.1.0
+
+.vsix 直接下载：https://github.com/PipiTang233/code-explainer/releases/download/v0.1.0/code-explainer-0.1.0.vsix
 
 ## 🔄 搁置中
 
